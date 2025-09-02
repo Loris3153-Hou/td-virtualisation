@@ -1,0 +1,4 @@
+Comment modifier le message affcihé sans générer une nouvelle image ? Donner la commande qui vous permet d'afficher un fichier depuis la machine hôte
+docker run -v .:/opt/ exo1
+
+

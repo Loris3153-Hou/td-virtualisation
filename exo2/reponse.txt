@@ -1,0 +1,2 @@
+docker build -t exo2 .
+docker run --rm -p 5000:3030 exo2

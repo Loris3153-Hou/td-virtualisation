@@ -1,0 +1,6 @@
+docker run --rm -e POSTGRES_USER=john -e POSTGRES_DB=doe -e POSTGRES_PASSWORD=johndoe postgres:latest
+docker run --rm --env-file env.txt postgres:latest
+Le dossier avec les données est /var/lib/postgresql/data
+docker run --rm --env-file env.txt -v .\data:/var/lib/postgresql/data postgres:latest
+docker run --rm --env-file env.txt -v volume_docker:/var/lib/postgresql/data postgres:latest    
+`--> volume systeme partage un partage data dans le host vers /data/ dans le conteneur.
